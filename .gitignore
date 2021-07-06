@@ -2,14 +2,20 @@
 
 # dependencies
 /node_modules
+**/*/node_modules
 /.pnp
 .pnp.js
 
 # testing
 /coverage
+**/*/coverage
 
 # production
 /build
+**/*/build
+
+# ignored lock file inside subdirectories
+**/*/*.lock
 
 # misc
 .vscode
