@@ -4,9 +4,11 @@ import AllMeetupsPage from "./pages/all-meetups";
 import FavoritesPage from "./pages/favorites";
 import NewMeetupPage from "./pages/new-meetup";
 
+import Layout from "./components/layout/layout";
+
 const App = () => {
   return (
-    <div>
+    <Layout>
       <Switch>
         <Route path="/" exact>
           <AllMeetupsPage />
@@ -18,7 +20,7 @@ const App = () => {
           <FavoritesPage />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 };
 
