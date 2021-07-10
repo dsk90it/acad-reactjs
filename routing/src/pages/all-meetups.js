@@ -13,7 +13,6 @@ const AllMeetupsPage = () => {
       .then((data) => {
         const meetups = [];
 
-        // destructure data
         for (const key in data) {
           const meetup = {
             id: key,
@@ -22,7 +21,7 @@ const AllMeetupsPage = () => {
           meetups.push(meetup);
         }
 
-        console.log(meetups);
+        // console.log(meetups);
 
         setIsLoading(false);
         setLoadedData(meetups);
