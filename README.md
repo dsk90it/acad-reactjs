@@ -4,4 +4,10 @@ This repository contains practical source code of the [course](https://www.udemy
 
 ## How to use
 
-The code are organized in multiple branches where every branch represents a course section.
+- The code are organized in multiple branches where every branch represents a course section.
+- Each modules organized in separate folders
+
+## How to run
+- `cd` to folder
+- run `npm install` or `yarn install`
+- then run `npm start` or `yarn start`
