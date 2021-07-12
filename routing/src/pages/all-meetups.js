@@ -28,19 +28,15 @@ const AllMeetupsPage = () => {
       });
   }, []);
 
-  if (isLoading) {
-    return (
-      <section>
-        <p>Loading...</p>
-      </section>
-    );
-  }
-
-  return (
+  return !isLoading ? (
     <div>
       <h1>All Meetups Page</h1>
       <MeetupList listItems={loadedData} />
     </div>
+  ) : (
+    <section>
+      <p>Loading...</p>
+    </section>
   );
 };
 
